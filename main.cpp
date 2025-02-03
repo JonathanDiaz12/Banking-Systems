@@ -38,9 +38,7 @@ switch (Choice) {
             case 2:
                 cout << "Enter the amount you would like to withdraw: ";
                 cin >> Withdrawal;
-                if (Withdrawal < 0) {
-                    cout << "Invalid amount. Withdrawal must be positive." << endl;
-                } else if (Withdrawal > Balance) {
+                if (Withdrawal < 0 && Withdrawal >Balance) {
                     cout << "Insufficient funds! Withdrawal unsuccessful." << endl;
                 } else {
                     Balance -= Withdrawal;
